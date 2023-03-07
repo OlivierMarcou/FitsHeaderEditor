@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2" fx:controller="net.arkaine.tifheadereditor.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+          <Label fx:id="lblOpen" text="Open Fits file" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+          <Button onAction="#btnOpen" text="open" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+          <Label fx:id="lblSave" text="Save modification(s) (a backup file will be created)" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+          <Button onAction="#btnSave" text="save" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+      </children>
+   </GridPane>
+
+    <GridPane>
+    </GridPane>
+</VBox>
